@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "RL.Common.Encryption": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7070",
+      "launchBrowser": false
+    }
+  }
+}
