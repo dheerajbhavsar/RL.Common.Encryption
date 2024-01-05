@@ -7,15 +7,15 @@ using Microsoft.Extensions.Configuration;
 
 namespace RL.Common.Encryption;
 
-public class PgpCrypto(ILogger<PgpCrypto> logger, IConfiguration configuration)
+public class PgpCryptoFunc(ILogger<PgpCryptoFunc> logger, IConfiguration configuration)
 {
-    private readonly ILogger<PgpCrypto> _logger = logger ??
+    private readonly ILogger<PgpCryptoFunc> _logger = logger ??
         throw new ArgumentNullException(nameof(logger));
 
     private readonly IConfiguration _configuration = configuration ??
         throw new ArgumentNullException(nameof(configuration));
 
-    [Function(nameof(PgpCrypto))]
+    [Function(nameof(PgpCryptoFunc))]
     public async Task Run([BlobTrigger("encrypt/{name}", Connection = "AzureWebJobsStorage")] BlobClient blobClient,
         string name
     )

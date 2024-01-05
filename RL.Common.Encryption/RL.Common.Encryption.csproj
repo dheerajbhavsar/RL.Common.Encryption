@@ -8,12 +8,6 @@
     <UserSecretsId>5ca65a7b-f0a0-4e8b-a1ed-b9538a6de01a</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Function.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Function.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Azure.Storage.Blobs" Version="12.19.1" />
     <PackageReference Include="Azure.Storage.Files.Shares" Version="12.17.1" />
     <PackageReference Include="Azure.Storage.Queues" Version="12.17.1" />
